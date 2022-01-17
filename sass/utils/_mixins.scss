@@ -1,0 +1,4 @@
+@mixin gradient {
+    background: linear-gradient(rgb(240, 240, 240),#ccc);
+    border-top: 2px solid #ccc;    
+}
