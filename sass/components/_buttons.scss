@@ -1,0 +1,20 @@
+/** Bouton du block Réservation page d'accueil**/
+@mixin BtnReservation {
+}
+/** Bouton du block Fonctionnement page d'accueil **/
+@mixin BtnFonct {
+  margin: 0px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+}
+@mixin ResaBtn {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 60%
+  );
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+}

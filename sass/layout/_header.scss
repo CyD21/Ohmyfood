@@ -5,9 +5,9 @@ header {
   align-items: center;
   width: 100%;
   margin: 0px auto;
-  padding: 10px 0px;
   .logo {
     width: 350px;
+    padding: 10px 0px;
   }
   .BoxLocal {
     @include gradient;

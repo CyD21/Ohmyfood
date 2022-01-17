@@ -1,0 +1,17 @@
+.fonction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .FonctionTitle {
+            font-weight: bold;
+            padding: 10px 0px;
+        }
+        .FonctionBoxBtn {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+        }
+        .FonctionBtn {
+            @include BtnFonct;
+        }
+}
