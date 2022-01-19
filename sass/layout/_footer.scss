@@ -1,0 +1,29 @@
+.blockfoot {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+        &__title {
+            margin-top: 20px;
+        }
+        &__title img {
+            filter: invert(100%);
+            width: 150px;
+        }
+        &__link {
+            padding: 0px;
+            margin: 0px;
+            color: #fff;
+        }
+        &__link ul {
+            padding: 0px;
+        }
+        &__link ul li {
+            padding: 0px;
+            margin: 0px;
+        }
+        &__link li {
+            list-style-type: none;
+        }
+
+}
