@@ -1,0 +1,35 @@
+.resto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-block;
+  margin-top: 10px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: $radius-all;
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: $radius-all;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+      & a {
+        display: flex;
+        color: black;
+        width: 24%;
+        text-decoration: none;
+      }
+      & a:hover {
+        color: $primary-color;
+      }
+  }
+  &__card {
+    @include cardresto;
+  }
+}

@@ -7,12 +7,12 @@
 @import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/CardResto";
 
 @import "./layout/header";
-@import "./layout/BlocFonctionnement";
-@import "./layout/BlocReservation";
-@import "./layout/nav";
-@import "./layout/form";
+@import "./layout/BlockFonctionnement";
+@import "./layout/BlockReservation";
+@import "./layout/BlockResto";
 
 @import "./pages/work";
 @import "./pages/about";

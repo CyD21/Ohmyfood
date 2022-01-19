@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-        .FonctionTitle {
+    width: 100%;
+    margin-bottom: 20px;
+        &__title {
             font-weight: bold;
             padding: 10px 0px;
         }
-        .FonctionBoxBtn {
+        &__boxbtn {
             display: flex;
             flex-direction: row;
             font-weight: bold;
         }
-        .FonctionBtn {
-            @include BtnFonct;
+        &__btn {
+            @include btnfonct;
         }
 }

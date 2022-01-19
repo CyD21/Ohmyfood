@@ -2,13 +2,14 @@
 @mixin BtnReservation {
 }
 /** Bouton du block Fonctionnement page d'accueil **/
-@mixin BtnFonct {
+@mixin btnfonct {
   margin: 0px 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 5px;
 }
-@mixin ResaBtn {
+/** Bouton du block réservation**/
+@mixin resabtn {
   background: linear-gradient(
     160deg,
     rgba(255, 121, 218, 1) 0%,
