@@ -18,12 +18,20 @@
         &__link ul {
             padding: 0px;
         }
-        &__link ul li {
-            padding: 0px;
-            margin: 0px;
-        }
         &__link li {
             list-style-type: none;
+            margin-bottom: 10px;
         }
+        &__link li i {
+            width: 20px;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        &__link li a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
 
 }
