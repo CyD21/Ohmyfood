@@ -4,17 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/cd7a845854.js"
-      crossorigin="CCD6A92F-5779-44D7-9275-85B658355ABB"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/cd7a845854.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
   </head>
   <body>
+    <!--================== HEADER ===================================================-->
     <header>
       <div class="logo">
         <img src="./images/ohmyfood.png" alt="Bienvenue chez ommyfood" />
@@ -24,6 +19,7 @@
         <div class="boxlocal__title">Paris, Belle ville.</div>
       </div>
     </header>
+    <!--================== MAIN ======================================================-->
     <main>
       <section>
       <div class="resa">
@@ -32,22 +28,13 @@
         <div class="resa__btn">Explorer nos restaurants</div>
       </div>
       </section>
-      <section class="fonction">
-        <div class="fonction__title">Fonctionnement</div>
-        <div class="fonction__boxbtn">
-          <div class="fonction__btn">
-            <div class="fonction__btnico"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <div class="fonction__btntext">Choisissez votre restaurant</div>
-          </div>
-          <div class="fonction__btn">
-            <div class="fonction__btnico"><i class="fa-solid fa-list"></i></div>
-            <div class="fonction__btntext">Composez votre menu</div>
-          </div>
-          <div class="fonction__btn">
-            <div class="fonction__btnico"><i class="fa-solid fa-store"></i>
-            <div class="fonction__btntext">Déguster au restaurant</div>
-          </div>
-        </div>
+      <section class="choice">
+          <div class="choice__title">Fonctionnement</div>
+            <div class="choice__box">          
+              <button class="box__btn box__btn--actif"><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez votre restaurant</button>       
+              <button class="box__btn"><span>2</span><i class="fa fa-list"></i>Composez votre menu</button>
+              <button class="box__btn"><span>3</span><i class="fa fa-store"></i>Déguster au restaurant</button>
+            </button>
       </section>
       <section class="resto">
         <div class="resto__title">Restaurants</div>

@@ -1,19 +1,20 @@
-.fonction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-        &__title {
-            font-weight: bold;
-            padding: 10px 0px;
-        }
-        &__boxbtn {
-            display: flex;
-            flex-direction: row;
-            font-weight: bold;
-        }
-        &__btn {
-            @include btnfonct;
-        }
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+.choice__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.choice__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.box__btn{
+  @include choicebtn;
 }
