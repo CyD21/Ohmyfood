@@ -2,11 +2,12 @@
 @mixin resabtn {
   background: $btn-grad;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 50px;
-  box-shadow: 2px 2px 2px #999;
+  border: none;
+  box-shadow: $shadow-off;
   &:hover {
-    box-shadow: 4px 4px 2px #999;
+    box-shadow: $shadow-on;
     cursor: pointer;
   }
 }
@@ -15,33 +16,59 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border: none;
   width: 250px;
   margin: 0px 20px;
   height: 60px;
   border-radius: 10px;
   font-weight: bold;
-    span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      border-radius: 50px;
-      background-color: $primary-color;
-      height: 30px;
-      width: 30px;
-      margin-left: -20px;
+  box-shadow: $shadow-off;
+  @include hightres {
+    width: 100%;
+  }
+  @include portrait {
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  @include desktops {
+    font-size: 15px;
+    height: 50px;
+  }
+  @include mobiles {
+    width: 100%;
+    margin: 10px 0px 0px 10px;
+    font-size: 16px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50px;
+    background-color: $primary-color;
+    height: 30px;
+    width: 30px;
+    margin-left: -20px;
+  }
+  i {
+    padding: 0px 30px;
+    color: $primary-color;
+    @include mobiles {
+      padding: 0px 15px;
     }
-    i {
+    @include portrait {
+      padding: 0px 20px;
+    }
+    @include desktops {
       padding: 0px 10px;
     }
-    &:hover {
-      color: $primary-color;
-      background-color: #F5EDFF;
-    }
-    &--actif {
-      color: $primary-color;
-      background-color: #F5EDFF;
-    }
+  }
+  &:hover {
+    background-color: #f5edff;
+  }
+  &--actif {
+    background-color: #f5edff;
+  }
 }

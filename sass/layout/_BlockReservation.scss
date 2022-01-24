@@ -4,11 +4,15 @@
   align-items: center;
   background-color: $bg-block;
   padding: 20px 0px;
-  &__title {
-    font-weight: bold;
+  @include mobiles {
+    text-align: center;
+    padding: 20px;
+  }
+  @include portrait {
+    padding: 0px 0px 10px 0px;
   }
   &__subtitle {
-    margin-bottom: 10px;
+    margin: 0px 0px 20px 0px;
   }
   &__btn {
     @include resabtn;
