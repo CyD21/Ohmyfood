@@ -2,20 +2,16 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto';
-    width: 100%;
+  font-family: "Roboto";
+  margin: 0px auto;
 }
 main {
-  margin: 0px;
-  @include hightres {
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  margin: 0px auto;
 }
 footer {
   background-color: #353535;
