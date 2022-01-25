@@ -8,14 +8,11 @@
 @import "./base/typography";
 
 @import "./components/buttons";
-@import "./components/CardResto";
 
 @import "./layout/header";
 @import "./layout/BlockFonctionnement";
 @import "./layout/BlockReservation";
-@import "./layout/BlockResto";
 @import "./layout/footer";
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+@import "./pages/_menu";
+@import "./pages/restaurant"

@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /** Base color**/
 /*==== Variables Box shadow ========*/
-/*desktops - higher resolution*/
-/*laptops, desktops*/
 /*tablets, ipads (portrait)*/
 /*smartphones mobiles (portrait) */
 /** Box sizing **/
@@ -35,6 +33,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0px auto;
+  width: 100%;
 }
 header a {
   width: 100%;
@@ -69,22 +68,31 @@ header .boxlocal i {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 20px 0px;
+  margin-bottom: 20px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .choice {
     margin: 10px 0px 50px 0px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .choice {
+    margin: 0px;
+  }
+}
+.choice__title {
+  padding-left: 10px;
+  width: 80%;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .choice__title {
     width: 100%;
     padding-left: 20px;
-    font-size: 14px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .choice__title {
+    width: 100%;
     padding-left: 20px;
   }
 }
@@ -92,10 +100,12 @@ header .boxlocal i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 80%;
+  width: 90%;
+  margin: 0px;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .choice__box {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,38 +124,27 @@ header .boxlocal i {
   flex-direction: row;
   align-items: center;
   background-color: #f6f6f6;
+  width: 350px;
+  height: 50px;
   border: none;
-  width: 250px;
   margin: 0px 20px;
-  height: 60px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: bold;
   box-shadow: 1px 1px 10px #999;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .box__btn {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .box__btn {
-    width: 80%;
-    margin-bottom: 10px;
+    width: 90%;
+    margin-bottom: 30px;
     font-size: 24px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .box__btn {
-    font-size: 15px;
-    height: 50px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .box__btn {
     width: 100%;
     margin: 10px 0px 0px 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .box__btn span {
@@ -168,17 +167,13 @@ header .boxlocal i {
     padding: 0px 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .box__btn i {
     padding: 0px 20px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .box__btn i {
-    padding: 0px 10px;
-  }
-}
 .box__btn:hover {
+  box-shadow: 2px 2px 10px #666;
   background-color: #f5edff;
 }
 .box__btn--actif {
@@ -198,7 +193,7 @@ header .boxlocal i {
     padding: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .resa {
     padding: 0px 0px 10px 0px;
   }
@@ -219,166 +214,16 @@ header .boxlocal i {
   cursor: pointer;
 }
 
-.resto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eeeeee;
-  margin-top: 10px;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-@media screen and (min-width: 1280px) {
-  .resto {
-    border-radius: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .resto {
-    width: 100%;
-    margin: 0px auto;
-    padding: 10px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .resto {
-    flex-direction: column;
-    border-radius: 20px;
-    width: 90%;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .resto {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.resto__title {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  font-weight: bold;
-  width: 100%;
-  padding: 10px 20px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .resto__title {
-    font-size: 14px;
-    padding: 0px 0px 0px 10px;
-  }
-}
-.resto__block {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .resto__block {
-    justify-content: flex-start;
-  }
-}
-.resto__block a {
-  display: flex;
-  color: black;
-  width: 45%;
-  text-decoration: none;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .resto__block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .resto__block a {
-    width: 50%;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .resto__block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .resto__block a {
-    width: 100%;
-  }
-}
-.resto__card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  margin: 10px;
-  box-shadow: 1px 1px 10px #999;
-}
-.resto__card:hover {
-  box-shadow: 2px 2px 10px #666;
-}
-.resto__card .resto__cardimg {
-  position: relative;
-}
-.resto__card .resto__cardimg img {
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
-  width: 100%;
-}
-.resto__card .resto__cardnews {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin-right: 10px;
-  padding: 5px;
-  background-color: #99e2d0;
-  font-size: small;
-  color: darkgreen;
-  margin-top: 10px;
-}
-.resto__card .resto__cardfoot {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-}
-@media screen and (min-width: 1280px) {
-  .resto__card .resto__cardfoot {
-    height: 80px;
-  }
-}
-.resto__card .resto__cardtexte {
-  padding-left: 20px;
-  width: 80%;
-}
-.resto__card .resto__cardtexte span {
-  font-weight: bold;
-}
-@media screen and (min-width: 1280px) {
-  .resto__card .resto__cardtexte {
-    font-size: 20px;
-  }
-}
-.resto__card .resto__cardheart {
-  width: 20%;
-  font-size: 30px;
-}
-
 .blockfoot {
   display: flex;
   flex-direction: column;
   width: 80%;
   height: 250px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .blockfoot {
     width: 95%;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .blockfoot {
-    width: 90%;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -426,6 +271,115 @@ header .boxlocal i {
   .blockfoot__link li a {
     font-size: 14px;
   }
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 10px 10px 40px 10px;
+  width: 100%;
+  margin: 0px auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .restaurant {
+    width: 100%;
+  }
+}
+.restaurant__title {
+  width: 80%;
+  margin: 0px auto;
+  padding-left: 10px;
+}
+.restaurant__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0px auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .restaurant__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #999;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 10px #999;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 42%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .card {
+    width: 90%;
+  }
+}
+.card__img img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+.card__news {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px 5px 10px;
+  background-color: #99e2d0;
+}
+.card__foot {
+  display: flex;
+  flex-direction: row;
+}
+.card__footblocktext {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 50px;
+  padding: 5px 0px 0px 15px;
+}
+.card__footext {
+  padding-left: 15px;
+  font-weight: bold;
+}
+.card__footsubtext {
+  padding-left: 15px;
+}
+.card__footheart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
