@@ -15,6 +15,13 @@
         width: 80%;
         margin: 0px auto;
         padding-left: 10px;
+        @include mobiles {
+            width: 100%;
+            padding-left: 5px;
+        }
+        @include portrait {
+            width: 100%;
+        }
     }
     &__container {
         display: flex;
@@ -27,6 +34,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: space-around;
             width: 100%;
         }
         @include mobiles {
@@ -44,13 +52,15 @@
     width: 25%;
     background-color: #fff;
     box-shadow: $shadow-off;
+    &:hover {
+        box-shadow: $shadow-on;
+    }
     & a {
         text-decoration: none;
         color: black;
-        box-shadow: $shadow-off;
     }
     @include portrait {
-        width: 42%;
+        width: 40%;
     }
     @include mobiles {
         width: 90%;
