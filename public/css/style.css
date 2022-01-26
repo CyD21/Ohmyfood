@@ -3,6 +3,8 @@
 /*==== Variables Box shadow ========*/
 /*tablets, ipads (portrait)*/
 /*smartphones mobiles (portrait) */
+/** Mixin de la partie page d'addueil **/
+/** Mixin de la partie menu restaurant **/
 /** Box sizing **/
 *,
 *::before,
@@ -26,8 +28,34 @@ footer {
   width: 100%;
 }
 
-/** Bouton du block réservation**/
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/** Bouton du block réservation page d'accueil **/
 /** Bouton du block Fonctionnement page d'accueil **/
+/** Bouton choix des menus page restaurant **/
+/**
+display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #99e2d0;
+      width: 50px;
+      height: 63px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      position: absolute;
+      padding: 20px;
+      right: -50px;
+      top: 0;
+      opacity: 0;
+      transition: transform 330ms ease-in-out;
+        .fa-check-circle {
+        color: #fff;
+        transition: transform 500ms ease-in-out;
+      }
+**/
 header {
   display: flex;
   flex-direction: column;
@@ -276,67 +304,217 @@ header .boxlocal i {
   }
 }
 
-header {
-  border-bottom: 2px solid #9356dc;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0px auto;
-}
-.menu__img {
-  margin: 0px auto;
-  width: 90%;
-  height: 300px;
-}
-.menu__img img {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
+/** Styles de la grid**/
+.grid {
+  display: grid;
+  background-color: #ccc;
   border-radius: 0px 0px 20px 20px;
-}
-.menu__block {
-  z-index: 2;
-  border: 2px solid #9356dc;
-  border-bottom: none;
-  border-radius: 20px 20px 0px 0px;
-  background-color: #f2f2f2;
-  margin: -50px auto 0px auto;
   width: 80%;
+  margin: 0px auto 20px auto;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
 }
-.menu__blocktitle {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
+.grid__title {
+  font-size: 30px;
+  padding: 20px 0px 20px 20px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 4;
 }
-.menu__blocktext {
+.grid__title i {
   padding: 0px 20px;
+  font-size: 30px;
 }
-.menu__blockheart {
+.grid__entree {
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.grid__entreetitle {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.grid__entreetitle hr {
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  width: 10%;
+  justify-content: flex-start;
+  border: 1px solid #99e2d0;
+  width: 40px;
 }
-.menu__container {
+.grid__entreebtn {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
   background-color: #fff;
   border-radius: 20px;
-  padding: 5px;
+  box-shadow: 1px 1px 10px #999;
+}
+.grid__entreebtn .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 60px;
+}
+.grid__entreebtn .btn__title {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.grid__entreebtn .btn__subtitle {
+  padding-left: 10px;
+}
+.grid__entreebtn .btn__check:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  background-color: #99e2d0;
+  width: 20%;
+  border-radius: 0px 20px 20px 0px;
+  transition: 330ms ease-in-out;
+}
+.grid__entreebtn .btn .fa-check-circle {
+  transition: transform 500ms ease-in-out;
+}
+.grid__plat {
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.grid__plattitle {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.grid__plattitle hr {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #99e2d0;
+  width: 40px;
+}
+.grid__platbtn {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #999;
+}
+.grid__platbtn .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 60px;
+}
+.grid__platbtn .btn__title {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.grid__platbtn .btn__subtitle {
+  padding-left: 10px;
+}
+.grid__platbtn .btn__check:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  background-color: #99e2d0;
+  width: 20%;
+  border-radius: 0px 20px 20px 0px;
+  transition: 330ms ease-in-out;
+}
+.grid__platbtn .btn .fa-check-circle {
+  transition: transform 500ms ease-in-out;
+}
+.grid__dessert {
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.grid__desserttitle {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.grid__desserttitle hr {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #99e2d0;
+  width: 40px;
+}
+.grid__dessertbtn {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #999;
+}
+.grid__dessertbtn .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 60px;
+}
+.grid__dessertbtn .btn__title {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.grid__dessertbtn .btn__subtitle {
+  padding-left: 10px;
+}
+.grid__dessertbtn .btn__check:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  background-color: #99e2d0;
+  width: 20%;
+  border-radius: 0px 20px 20px 0px;
+  transition: 330ms ease-in-out;
+}
+.grid__dessertbtn .btn .fa-check-circle {
+  transition: transform 500ms ease-in-out;
+}
+
+/**==================**/
+.menuimg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  margin: 0px auto;
+  border-top: 2px solid #9356dc;
+}
+.menuimg img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .restaurant {

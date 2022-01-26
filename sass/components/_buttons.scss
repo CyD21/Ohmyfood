@@ -1,4 +1,4 @@
-/** Bouton du block réservation**/
+/** Bouton du block réservation page d'accueil **/
 @mixin resabtn {
   background: $btn-grad;
   color: #fff;
@@ -19,7 +19,7 @@
   background-color: #f6f6f6;
   width: 350px;
   height: 50px;
-  border: none; 
+  border: none;
   margin: 0px 20px;
   border-radius: 10px;
   font-size: 1em;
@@ -64,3 +64,59 @@
     background-color: #f5edff;
   }
 }
+/** Bouton choix des menus page restaurant **/
+@mixin btnmenu {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: $radius-all;
+  box-shadow: $shadow-off;
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 60px;
+    &__title {
+      font-weight: bold;
+      padding-left: 10px;
+    }
+    &__subtitle {
+      padding-left: 10px;
+    }
+    &__check:hover  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #fff;
+      background-color: $tertiaire-color;
+      width: 20%;
+      border-radius: $radius-right;
+      transition: 330ms ease-in-out;      
+    }
+    .fa-check-circle {
+      transition: transform 500ms ease-in-out;
+    }
+  }
+}
+/**
+display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #99e2d0;
+      width: 50px;
+      height: 63px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      position: absolute;
+      padding: 20px;
+      right: -50px;
+      top: 0;
+      opacity: 0;
+      transition: transform 330ms ease-in-out;
+        .fa-check-circle {
+        color: #fff;
+        transition: transform 500ms ease-in-out;
+      }
+**/
