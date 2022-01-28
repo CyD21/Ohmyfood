@@ -1,0 +1,64 @@
+@mixin carte {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  border-radius: $radius-all;
+  box-shadow: $shadow-off;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+
+  &__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+
+    & h4 {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    & p {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  &__price {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 10px;
+  }
+  &__confirmation {
+    background-color: $tertiaire-color;
+    margin: -10px -80px -10px 14px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+  &:hover &__confirmation {
+    margin-right: -10px;
+  }
+  &__wrapicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    font-size: 30px;
+    color: #fff;
+  }
+  &:hover &__icon {
+    transform: rotate(360deg);
+    transition-duration: 600ms;
+    font-size: 30px;
+    color: #fff;
+  }
+}

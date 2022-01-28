@@ -7,8 +7,14 @@
     <link rel="icon" href="images/favico.png" type="images/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/cd7a845854.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd7a845854.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ohmyfood</title>
   </head>
   <body>
@@ -30,33 +36,37 @@
         />
       </div>
       <!--================== CARTE DES MENUS ===========================================-->
-      <section class="menu">
+      <article class="menu">
         <div class="grid">
           <div class="grid__title">
-            <div>
-              La palette du goût<span><i class="far fa-heart"></i></span>
-            </div>
+            <h1>La palette du goût</h1>
+            <i class="far fa-heart"></i>
           </div>
           <div class="grid__entree">
             <div class="grid__entreetitle">
               Entrées
               <hr />
             </div>
-            <div class="grid__entreebtn">
-              <!--============ Stucture btn ===============-->
-              <div class="btn">
-                <div class="btn__title">Title</div>
-                <div class="btn__subtitle">Subtitle</div>
+      <!-- MENU DES ENTREES -->
+      <!--============ Stucture btn ===============-->
+            <div class="carte">
+              <div class="carte__header">
+                <h4>Titre</h4>
+                <p>Sous Titre</p>
               </div>
-              <div class="btn__check">
-                <span><i class="far fa-check-circle"></i></span>
+              <div class="carte__price">Tarif</div>
+              <div class="carte__confirmation">
+                <div class="carte__wrapIcon">
+                  <i class="far fa-check-circle carte__icon"></i>
               </div>
             </div>
-            <!--==========================================-->
-            <div class="grid__entreebtn"></div>
-            <div class="grid__entreebtn"></div>
+      <!--==========================================-->
+      <!-- FIN MENU ENTREES-->
           </div>
-          <div class="grid__plat">
+          </div>
+         
+          
+          <section class="grid__plat">
             <div class="grid__plattitle">
               Plats
               <hr />
@@ -64,8 +74,8 @@
             <div class="grid__platbtn"></div>
             <div class="grid__platbtn"></div>
             <div class="grid__platbtn"></div>
-          </div>
-          <div class="grid__dessert">
+          </section>
+          <section class="grid__dessert">
             <div class="grid__desserttitle">
               Desserts
               <hr />
@@ -73,9 +83,9 @@
             <div class="grid__dessertbtn"></div>
             <div class="grid__dessertbtn"></div>
             <div class="grid__dessertbtn"></div>
-          </div>
+          </section>
         </div>
-      </section>
+      </article>
       <!--================== FIN CARTE DES MENUS =======================================-->
     </main>
     <footer>

@@ -28,34 +28,25 @@ footer {
   width: 100%;
 }
 
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 h2 {
   font-size: 24px;
-  font-weight: bold;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 /** Bouton du block réservation page d'accueil **/
 /** Bouton du block Fonctionnement page d'accueil **/
-/** Bouton choix des menus page restaurant **/
-/**
-display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #99e2d0;
-      width: 50px;
-      height: 63px;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      position: absolute;
-      padding: 20px;
-      right: -50px;
-      top: 0;
-      opacity: 0;
-      transition: transform 330ms ease-in-out;
-        .fa-check-circle {
-        color: #fff;
-        transition: transform 500ms ease-in-out;
-      }
-**/
 header {
   display: flex;
   flex-direction: column;
@@ -317,6 +308,11 @@ header .boxlocal i {
   height: 100%;
 }
 .grid__title {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 100%;
   font-size: 30px;
   padding: 20px 0px 20px 20px;
   grid-row-start: 1;
@@ -327,6 +323,10 @@ header .boxlocal i {
 .grid__title i {
   padding: 0px 20px;
   font-size: 30px;
+}
+.grid__title h1 {
+  margin: 0px;
+  padding: 0px;
 }
 .grid__entree {
   background-color: #f2f2f2;
@@ -350,41 +350,6 @@ header .boxlocal i {
   border: 1px solid #99e2d0;
   width: 40px;
 }
-.grid__entreebtn {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px #999;
-}
-.grid__entreebtn .btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 60px;
-}
-.grid__entreebtn .btn__title {
-  font-weight: bold;
-  padding-left: 10px;
-}
-.grid__entreebtn .btn__subtitle {
-  padding-left: 10px;
-}
-.grid__entreebtn .btn__check:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
-  background-color: #99e2d0;
-  width: 20%;
-  border-radius: 0px 20px 20px 0px;
-  transition: 330ms ease-in-out;
-}
-.grid__entreebtn .btn .fa-check-circle {
-  transition: transform 500ms ease-in-out;
-}
 .grid__plat {
   background-color: #f2f2f2;
   margin: 10px;
@@ -406,41 +371,6 @@ header .boxlocal i {
   justify-content: flex-start;
   border: 1px solid #99e2d0;
   width: 40px;
-}
-.grid__platbtn {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px #999;
-}
-.grid__platbtn .btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 60px;
-}
-.grid__platbtn .btn__title {
-  font-weight: bold;
-  padding-left: 10px;
-}
-.grid__platbtn .btn__subtitle {
-  padding-left: 10px;
-}
-.grid__platbtn .btn__check:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
-  background-color: #99e2d0;
-  width: 20%;
-  border-radius: 0px 20px 20px 0px;
-  transition: 330ms ease-in-out;
-}
-.grid__platbtn .btn .fa-check-circle {
-  transition: transform 500ms ease-in-out;
 }
 .grid__dessert {
   background-color: #f2f2f2;
@@ -464,41 +394,6 @@ header .boxlocal i {
   border: 1px solid #99e2d0;
   width: 40px;
 }
-.grid__dessertbtn {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px #999;
-}
-.grid__dessertbtn .btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 60px;
-}
-.grid__dessertbtn .btn__title {
-  font-weight: bold;
-  padding-left: 10px;
-}
-.grid__dessertbtn .btn__subtitle {
-  padding-left: 10px;
-}
-.grid__dessertbtn .btn__check:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
-  background-color: #99e2d0;
-  width: 20%;
-  border-radius: 0px 20px 20px 0px;
-  transition: 330ms ease-in-out;
-}
-.grid__dessertbtn .btn .fa-check-circle {
-  transition: transform 500ms ease-in-out;
-}
 
 /**==================**/
 .menuimg {
@@ -515,6 +410,69 @@ header .boxlocal i {
   object-fit: cover;
   object-position: center center;
   border-radius: 0px 0px 20px 20px;
+}
+
+.carte {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #999;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+}
+.carte__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.carte__header h4 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.carte__header p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.carte__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 10px;
+}
+.carte__confirmation {
+  background-color: #99e2d0;
+  margin: -10px -80px -10px 14px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.carte:hover .carte__confirmation {
+  margin-right: -10px;
+}
+.carte__wrapicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carte__icon {
+  font-size: 30px;
+  color: #fff;
+}
+.carte:hover .carte__icon {
+  transform: rotate(360deg);
+  transition-duration: 600ms;
+  font-size: 30px;
+  color: #fff;
 }
 
 .restaurant {
