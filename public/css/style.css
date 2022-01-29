@@ -47,6 +47,9 @@ h4 {
 
 /** Bouton du block réservation page d'accueil **/
 /** Bouton du block Fonctionnement page d'accueil **/
+/** STYLE POUR LE BOUTON COEUR FAVORI
+<i class="far fa-heart"></i>
+====================================**/
 header {
   display: flex;
   flex-direction: column;
@@ -224,7 +227,7 @@ header .boxlocal i {
   margin: 0px 0px 20px 0px;
 }
 .resa__btn {
-  background: linear-gradient(#ff79da 0%, #9356dc 90%);
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 90%);
   color: #fff;
   padding: 15px 20px;
   border-radius: 50px;
@@ -329,6 +332,7 @@ header .boxlocal i {
   padding: 0px;
 }
 .grid__entree {
+  min-width: 90%;
   background-color: #f2f2f2;
   margin: 10px;
   padding: 10px;
@@ -351,6 +355,7 @@ header .boxlocal i {
   width: 40px;
 }
 .grid__plat {
+  min-width: 90%;
   background-color: #f2f2f2;
   margin: 10px;
   padding: 10px;
@@ -373,6 +378,7 @@ header .boxlocal i {
   width: 40px;
 }
 .grid__dessert {
+  min-width: 90%;
   background-color: #f2f2f2;
   margin: 10px;
   padding: 10px;
@@ -413,6 +419,8 @@ header .boxlocal i {
 }
 
 .carte {
+  margin-bottom: 10px;
+  display: block;
   background-color: #fff;
   display: flex;
   padding: 10px;
@@ -596,6 +604,26 @@ header .boxlocal i {
   justify-content: center;
   width: 20%;
   font-size: 30px;
+}
+
+.btnheart {
+  position: relative;
+  font-size: xx-large;
+}
+.btnheart__off {
+  position: absolute;
+}
+.btnheart__on {
+  position: absolute;
+  opacity: 0;
+  transform: translatez(0%);
+}
+.btnheart__on:hover {
+  transition-delay: 200ms;
+  color: #9356dc;
+  transition-duration: 800ms;
+  transform: translatez(100%);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
