@@ -1,112 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
-    <link rel="icon" href="images/favico.png" type="images/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/cd7a845854.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
+  <link rel="icon" href="images/favico.png" type="images/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/cd7a845854.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
-  </head>
-  <body>
-    <!--================== HEADER ===================================================-->
-    <header>
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="./images/ohmyfood.png" alt="Bienvenue chez ommyfood"
-        /></a>
-      </div>
-    </header>
-    <!--================== HEADER ======================================================-->
-    <main>
-      <!--================ IMAGE MENU ==================================================-->
-      <div class="menuimg">
-        <img
-          src="./images/restaurants/Lapalettedugout/resto01.jpg"
-          alt="La palette du goût"
-        />
-      </div>
-      <!--================== CARTE DES MENUS ===========================================-->
-      <article class="menu">
-        <div class="grid">
-          <div class="grid__title">
-            <h1>La palette du goût</h1>
-            <i class="far fa-heart"></i>
-          </div>
-          <div class="grid__entree">
-            <div class="grid__entreetitle">
-              Entrées
-              <hr />
-            </div>
-      <!-- MENU DES ENTREES -->
-      <!--============ Stucture btn ===============-->
-            <div class="carte">
-              <div class="carte__header">
-                <h4>Titre</h4>
-                <p>Sous Titre</p>
-              </div>
-              <div class="carte__price">Tarif</div>
-              <div class="carte__confirmation">
-                <div class="carte__wrapIcon">
-                  <i class="far fa-check-circle carte__icon"></i>
-              </div>
-            </div>
-      <!--==========================================-->
-      <!-- FIN MENU ENTREES-->
-          </div>
-          </div>
-         
-          
-          <section class="grid__plat">
-            <div class="grid__plattitle">
-              Plats
-              <hr />
-            </div>
-            <div class="grid__platbtn"></div>
-            <div class="grid__platbtn"></div>
-            <div class="grid__platbtn"></div>
-          </section>
-          <section class="grid__dessert">
-            <div class="grid__desserttitle">
-              Desserts
-              <hr />
-            </div>
-            <div class="grid__dessertbtn"></div>
-            <div class="grid__dessertbtn"></div>
-            <div class="grid__dessertbtn"></div>
-          </section>
+</head>
+<body>
+<!--================== HEADER ===================================================-->
+  <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./images/ohmyfood.png" alt="Bienvenue chez ommyfood"/></a>
+    </div>
+  </header>
+<!--================== HEADER ======================================================-->
+<!--================ IMAGE MENU ==================================================-->
+<main>
+  <div class="menuimg">
+  <img src="./images/restaurants/Lapalettedugout/resto01.jpg" alt="La palette du goût"/>
+  </div>
+<!--================== CARTE DES MENUS ===========================================-->
+  <article class="menu">
+    <div class="grid">
+      <div class="grid__title">
+        <h1>La palette du goût</h1>
+        <div class="card__footheart btnheart">
+          <i class="far fa-heart btnheart__off"></i>
+          <i class="fas fa-heart btnheart__on"></i>
         </div>
-      </article>
-      <!--================== FIN CARTE DES MENUS =======================================-->
-    </main>
-    <footer>
-      <div class="blockfoot">
-        <div class="blockfoot__title">
-          <img src="./images/ohmyfood.png" alt="ohmyfood" />
-        </div>
-        <div class="blockfoot__link">
-          <ul>
-            <li>
-              <i class="fas fa-utensils"></i><a href="#">un restaurant</a>
-            </li>
-            <li>
-              <i class="fas fa-hands-helping"></i
-              ><a href="#">Devenir partenaire</a>
-            </li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+    </div>
+<!--==========================================-->
+<!-- MENU DES ENTREES -->
+<!--==========================================-->
+    <div class="grid__entree">
+      <div class="grid__entreetitle">
+        Entrées
+        <hr />
+    </div>
+<!--============ Stucture btn ===============-->
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
       </div>
-    </footer>
-  </body>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    </div>
+<!--==========================================-->
+<!-- FIN MENU ENTREES-->
+<!--==========================================-->
+<!-- MENU DES PLATS -->
+<!--==========================================-->
+    <div class="grid__plat">
+      <div class="grid__plattitle">
+        Plats
+        <hr />
+    </div>
+<!--============ Stucture btn ===============-->
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    </div>
+<!--==========================================-->
+<!-- FIN MENU PLATS-->
+<!--==========================================-->
+<!-- MENU DES DESSERTS -->
+<!--==========================================-->
+        <div class="grid__dessert">
+          <div class="grid__desserttitle">
+            Desserts
+            <hr />
+          </div>
+<!--============ Stucture btn ===============-->
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    <div class="carte">
+      <div class="carte__header">
+        <h4>Titre</h4>
+        <p>Sous Titre</p>
+      </div>
+      <div class="carte__price">Tarif</div>
+      <div class="carte__confirmation">
+      <div class="carte__wrapIcon">
+        <i class="far fa-check-circle carte__icon"></i>
+      </div>
+      </div>
+    </div>
+    </div>
+<!--==========================================-->
+<!-- FIN MENU DES DESSERTS-->
+<!--================== FIN CARTE DES MENUS =======================================-->   
+    </article>
+</main>
+<footer>
+  <div class="blockfoot">
+    <div class="blockfoot__title">
+      <img src="./images/ohmyfood.png" alt="ohmyfood" />
+    </div>
+    <div class="blockfoot__link">
+      <ul>
+        <li>
+          <i class="fas fa-utensils"></i><a href="#">un restaurant</a>
+        </li>
+        <li>
+          <i class="fas fa-hands-helping"></i>
+          <a href="#">Devenir partenaire</a>
+        </li>
+        <li>
+          <a href="#">Mentions légales</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
