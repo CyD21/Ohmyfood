@@ -27,7 +27,7 @@ footer {
   background-color: #353535;
   width: 100%;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   footer {
     margin-top: 0px;
   }
@@ -84,19 +84,19 @@ h4 {
 
 @keyframes animenu {
   0% {
-    transform: translateY(-400px);
+    transform: scaley(0%);
     transform-origin: 100% 0%;
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: scaley(100%);
     transform-origin: 100% 0%;
     opacity: 1;
   }
 }
 /** Animation des boutons -**/
 .btntop {
-  animation: btntop 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  animation: btntop 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1.4s both;
 }
 
 @keyframes btntop {
@@ -110,7 +110,7 @@ h4 {
   }
 }
 .btnmid {
-  animation: btnmiddle 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  animation: btnmiddle 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.4s both;
 }
 
 @keyframes btnmiddle {
@@ -124,7 +124,7 @@ h4 {
   }
 }
 .btnbot {
-  animation: btnbot 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  animation: btnbot 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1.4s both;
 }
 
 @keyframes btnbot {
@@ -146,7 +146,6 @@ header {
   width: 100%;
 }
 header .logo {
-  z-index: 100;
   background-color: #fff;
   position: relative;
   display: flex;
@@ -192,7 +191,7 @@ header .boxlocal i {
     margin: 10px 0px 50px 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .choice {
     margin: 0px;
   }
@@ -208,7 +207,7 @@ header .boxlocal i {
     padding-left: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .choice__title {
     width: 100%;
     padding-left: 20px;
@@ -221,7 +220,7 @@ header .boxlocal i {
   width: 90%;
   margin: 0px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .choice__box {
     display: flex;
     flex-direction: column;
@@ -252,7 +251,7 @@ header .boxlocal i {
   font-weight: bold;
   box-shadow: 1px 1px 10px #999;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .box__btn {
     width: 100%;
     margin-bottom: 30px;
@@ -286,7 +285,7 @@ header .boxlocal i {
     padding: 0px 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .box__btn i {
     padding: 0px 20px;
   }
@@ -312,7 +311,7 @@ header .boxlocal i {
     padding: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .resa {
     padding: 0px 0px 10px 0px;
   }
@@ -341,7 +340,7 @@ header .boxlocal i {
   height: 250px;
   margin: 0px auto;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .blockfoot {
     width: 95%;
   }
@@ -406,7 +405,7 @@ header .boxlocal i {
   gap: 0px;
   height: 100%;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grid {
     margin: -100px 0px 0px 0px;
     grid-template-rows: auto auto auto auto;
@@ -427,6 +426,7 @@ header .boxlocal i {
 .grid__title {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-content: center;
   align-items: center;
   font-family: "Shrikhand", cursive;
@@ -441,7 +441,7 @@ header .boxlocal i {
 .grid__title h1 {
   margin: 0px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grid__title {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -457,6 +457,12 @@ header .boxlocal i {
     grid-row-end: 1;
     grid-column-end: 2;
   }
+}
+.grid__heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
 }
 .grid__entree {
   min-width: 90%;
@@ -482,7 +488,7 @@ header .boxlocal i {
   border: 1px solid #99e2d0;
   width: 40px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grid__entree {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -522,7 +528,7 @@ header .boxlocal i {
   border: 1px solid #99e2d0;
   width: 40px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grid__plat {
     grid-row-start: 3;
     grid-column-start: 1;
@@ -562,7 +568,7 @@ header .boxlocal i {
   border: 1px solid #99e2d0;
   width: 40px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grid__dessert {
     grid-row-start: 4;
     grid-column-start: 1;
@@ -583,6 +589,7 @@ header .boxlocal i {
 .menuimg {
   display: flex;
   justify-content: center;
+  z-index: 10;
   width: 100%;
   height: 400px;
   margin: 0px auto;
@@ -595,7 +602,7 @@ header .boxlocal i {
   object-position: 50% 75%;
   border-radius: 0px 0px 20px 20px;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .menuimg img {
     object-position: 50% 100%;
     width: 100%;
@@ -680,7 +687,7 @@ header .boxlocal i {
   padding: 20px;
   font-size: x-large;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .commande {
     background-color: #ccc;
     margin: 0px;
@@ -737,7 +744,7 @@ header .boxlocal i {
   width: 100%;
   margin: 0px auto;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .restaurant {
     width: 100%;
   }
@@ -758,7 +765,7 @@ header .boxlocal i {
     padding-left: 5px;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .restaurant__title {
     width: 100%;
   }
@@ -770,7 +777,7 @@ header .boxlocal i {
   width: 80%;
   margin: 0px auto;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .restaurant__container {
     display: flex;
     flex-direction: row;
@@ -804,7 +811,7 @@ header .boxlocal i {
   text-decoration: none;
   color: black;
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .card {
     width: 40%;
   }

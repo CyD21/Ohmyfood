@@ -26,12 +26,12 @@
 }
 @keyframes animenu {
   0% {
-    transform: translateY(-400px);
+    transform: scaley(0%);
     transform-origin: 100% 0%;
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: scaley(100%);
     transform-origin: 100% 0%;
     opacity: 1;
   }
@@ -40,7 +40,7 @@
 
  /** Animation des boutons -**/
 .btntop {
-  animation: btntop 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+  animation: btntop 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
 }
 @keyframes btntop {
   0% {
@@ -53,7 +53,7 @@
   }
 }
 .btnmid {
-  animation: btnmiddle 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+  animation: btnmiddle 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
 }
 @keyframes btnmiddle {
   0% {
@@ -66,7 +66,7 @@
   }
 }
 .btnbot {
-  animation: btnbot 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+  animation: btnbot 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
 }
 @keyframes btnbot {
   0% {
@@ -78,3 +78,4 @@
     opacity: 1;
   }
 }
+
