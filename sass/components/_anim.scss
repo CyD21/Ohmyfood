@@ -40,7 +40,7 @@
 
  /** Animation des boutons -**/
 .btntop {
-  animation: btntop 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
+  animation: btntop 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
 }
 @keyframes btntop {
   0% {
@@ -53,7 +53,7 @@
   }
 }
 .btnmid {
-  animation: btnmiddle 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
+  animation: btnmiddle 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
 }
 @keyframes btnmiddle {
   0% {
@@ -66,7 +66,7 @@
   }
 }
 .btnbot {
-  animation: btnbot 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both;
+  animation: btnbot 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
 }
 @keyframes btnbot {
   0% {
