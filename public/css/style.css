@@ -797,7 +797,7 @@ header .boxlocal i {
 .btnheart__on {
   position: absolute;
   opacity: 0;
-  transform: translatez(0%);
+  transform: translatez(0px);
   font-size: 34px;
 }
 .btnheart__on:hover {
@@ -807,9 +807,8 @@ header .boxlocal i {
   -webkit-text-fill-color: transparent;
   transition-delay: 200ms;
   transition-duration: 800ms;
-  transform: translatez(100%);
+  transform: translatez(34px);
   opacity: 1;
-  text-overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
