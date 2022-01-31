@@ -56,11 +56,47 @@ h4 {
 ====================================**/
 /**
  * ----------------------------------------
- * animation carte des menus
+ * Animation carte des menus
  * ----------------------------------------
  */
+/** Animation de l'image **/
+.animimg {
+  animation: animimg 0.8s ease-in-out both;
+}
+
+@keyframes animimg {
+  0% {
+    transform: translateY(-500px);
+    transform-origin: 100% 0%;
+    opacity: 1;
+    filter: grayscale(1);
+  }
+  100% {
+    transform: translateY(0px);
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+/** Animation carte du menu **/
+.animmenu {
+  animation: animenu 0.8s ease-in-out 0.8s both;
+}
+
+@keyframes animenu {
+  0% {
+    transform: translateY(-400px);
+    transform-origin: 100% 0%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+/** Animation des boutons -**/
 .btntop {
-  animation: btntop 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: btntop 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
 
 @keyframes btntop {
@@ -74,7 +110,7 @@ h4 {
   }
 }
 .btnmid {
-  animation: btnmiddle 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: btnmiddle 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
 
 @keyframes btnmiddle {
@@ -88,7 +124,7 @@ h4 {
   }
 }
 .btnbot {
-  animation: btnbot 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: btnbot 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
 
 @keyframes btnbot {
@@ -109,8 +145,15 @@ header {
   margin: 0px auto;
   width: 100%;
 }
-header a {
+header .logo {
+  z-index: 100;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
 header .logo img {
   width: 350px;
@@ -662,6 +705,28 @@ header .boxlocal i {
 .commande__btn:hover {
   box-shadow: 2px 2px 10px #666;
   cursor: pointer;
+}
+
+.backarrow {
+  position: absolute;
+  width: 80%;
+}
+.backarrow a {
+  color: black;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .backarrow {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+.backarrow__ico {
+  font-size: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .backarrow__ico {
+    font-size: 20px;
+  }
 }
 
 .restaurant {

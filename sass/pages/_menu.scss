@@ -1,3 +1,4 @@
+
 /** Styles de la grid**/
 .grid {
   display: grid;
@@ -171,5 +172,22 @@
     width: 300px;
     margin: 0px auto;
     @include resabtn;
+  }
+}
+.backarrow {
+  position: absolute;
+  width: 80%;
+  & a {
+    color: black;
+  }
+  @include mobiles {
+    margin-left: 20px;
+    width: 100%;
+  }
+  &__ico {
+    font-size: 40px;
+    @include mobiles {
+      font-size: 20px;
+    }
   }
 }

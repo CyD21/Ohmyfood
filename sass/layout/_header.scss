@@ -5,8 +5,15 @@ header {
   align-items: center;
   margin: 0px auto;
   width: 100%;
-  & a {
+  .logo {
+    z-index: 100;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    margin: 0 auto;
   }
   .logo img {
     width: 350px;
