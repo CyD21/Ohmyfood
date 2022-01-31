@@ -16,4 +16,10 @@ main {
 footer {
   background-color: #353535;
   width: 100%;
+  @include portrait {
+    margin-top: 0px;
+  }
+  @include mobiles {
+
+  }
 }

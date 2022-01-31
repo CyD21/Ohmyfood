@@ -1,0 +1,44 @@
+/**
+ * ----------------------------------------
+ * animation carte des menus
+ * ----------------------------------------
+ */
+.btntop {
+  animation: btntop 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes btntop {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.btnmid {
+  animation: btnmiddle 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes btnmiddle {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.btnbot {
+  animation: btnbot 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes btnbot {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

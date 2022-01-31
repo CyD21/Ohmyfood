@@ -1,6 +1,7 @@
 /** Bouton du block réservation page d'accueil **/
 @mixin resabtn {
   background: $btn-grad;
+  text-align: center;
   color: #fff;
   padding: 15px 20px;
   border-radius: 50px;
