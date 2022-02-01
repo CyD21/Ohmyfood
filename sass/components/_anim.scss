@@ -1,95 +1,54 @@
-/**
- * ----------------------------------------
- * Animation carte des menus
- * ----------------------------------------
- */
- /** Animation de l'image **/
- .animimg {
-	animation: animimg 0.8s ease-in-out both;
+/*
+*------------------------------------------
+* Animation preload
+*------------------------------------------
+*/
+.animlogo {
+  animation: animlogo 4s cubic-bezier(.77,.43,.1,1);
 }
-@keyframes animimg {
+@keyframes animlogo {
   0% {
-    transform: translateY(-500px);
-    transform-origin: 100% 0%;
-    opacity: 1;
-    filter: grayscale(1);
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+      opacity: 1;
   }
   100% {
-    transform: translateY(0px);
-    transform-origin: 100% 0%;
-    opacity: 1;
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+      opacity: 1;
   }
 }
-/** Animation carte du menu **/
-.animmenu {
-	animation: animenu 0.8s ease-in-out 0.8s both;
-}
-@keyframes animenu {
-  0% {
-    transform: scaley(0%);
-    transform-origin: 100% 0%;
-    opacity: 0;
+
+
+.animexit {
+    animation: exit 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
   }
-  100% {
-    transform: scaley(100%);
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
- /** Animation des boutons -**/
-.btntop {
-  animation: btntop 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
-}
-@keyframes btntop {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.btnmid {
-  animation: btnmiddle 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
-}
-@keyframes btnmiddle {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.btnbot {
-  animation: btnbot 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
-}
-@keyframes btnbot {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+   @keyframes exit {
+      0% {
+        transform: translateZ(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateZ(-1100px);
+        opacity: 0;
+      }
 }
 /******************************************************************************/
-
-
-
-@mixin animcheck {
-  @for $i from 0 to 100 {
-    &--#{$i} {
-      animation-name: animcheck;
-      animation-duration: #{$i*100}ms;
-      animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+/*
+* ----------------------------------------
+* Animation carte des menus
+* ----------------------------------------
+*/
+ @mixin animcheck {
+   @for $i from 0 to 100 {
+     &--#{$i} {
+       animation-name: animcheck;
+       animation-duration: #{$i*100}ms;
+       animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
       animation-fill-mode: both;
       animation-delay: 0.6s;
     }
-}
+  }
 }
 @keyframes animcheck {
   0% {
