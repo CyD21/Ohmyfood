@@ -36,8 +36,6 @@
     opacity: 1;
   }
 }
-
-
  /** Animation des boutons -**/
 .btntop {
   animation: btntop 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
@@ -78,4 +76,28 @@
     opacity: 1;
   }
 }
+/******************************************************************************/
 
+
+
+@mixin animcheck {
+  @for $i from 0 to 100 {
+    &--#{$i} {
+      animation-name: animcheck;
+      animation-duration: #{$i*100}ms;
+      animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+      animation-fill-mode: both;
+      animation-delay: 0.6s;
+    }
+}
+}
+@keyframes animcheck {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

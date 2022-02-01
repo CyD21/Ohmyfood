@@ -137,6 +137,17 @@ h4 {
     opacity: 1;
   }
 }
+/******************************************************************************/
+@keyframes animcheck {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -734,6 +745,707 @@ header .boxlocal i {
   .backarrow__ico {
     font-size: 20px;
   }
+}
+
+.animcheck--0 {
+  animation-name: animcheck;
+  animation-duration: 0ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--1 {
+  animation-name: animcheck;
+  animation-duration: 100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--2 {
+  animation-name: animcheck;
+  animation-duration: 200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--3 {
+  animation-name: animcheck;
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--4 {
+  animation-name: animcheck;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--5 {
+  animation-name: animcheck;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--6 {
+  animation-name: animcheck;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--7 {
+  animation-name: animcheck;
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--8 {
+  animation-name: animcheck;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--9 {
+  animation-name: animcheck;
+  animation-duration: 900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--10 {
+  animation-name: animcheck;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--11 {
+  animation-name: animcheck;
+  animation-duration: 1100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--12 {
+  animation-name: animcheck;
+  animation-duration: 1200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--13 {
+  animation-name: animcheck;
+  animation-duration: 1300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--14 {
+  animation-name: animcheck;
+  animation-duration: 1400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--15 {
+  animation-name: animcheck;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--16 {
+  animation-name: animcheck;
+  animation-duration: 1600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--17 {
+  animation-name: animcheck;
+  animation-duration: 1700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--18 {
+  animation-name: animcheck;
+  animation-duration: 1800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--19 {
+  animation-name: animcheck;
+  animation-duration: 1900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--20 {
+  animation-name: animcheck;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--21 {
+  animation-name: animcheck;
+  animation-duration: 2100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--22 {
+  animation-name: animcheck;
+  animation-duration: 2200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--23 {
+  animation-name: animcheck;
+  animation-duration: 2300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--24 {
+  animation-name: animcheck;
+  animation-duration: 2400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--25 {
+  animation-name: animcheck;
+  animation-duration: 2500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--26 {
+  animation-name: animcheck;
+  animation-duration: 2600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--27 {
+  animation-name: animcheck;
+  animation-duration: 2700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--28 {
+  animation-name: animcheck;
+  animation-duration: 2800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--29 {
+  animation-name: animcheck;
+  animation-duration: 2900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--30 {
+  animation-name: animcheck;
+  animation-duration: 3000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--31 {
+  animation-name: animcheck;
+  animation-duration: 3100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--32 {
+  animation-name: animcheck;
+  animation-duration: 3200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--33 {
+  animation-name: animcheck;
+  animation-duration: 3300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--34 {
+  animation-name: animcheck;
+  animation-duration: 3400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--35 {
+  animation-name: animcheck;
+  animation-duration: 3500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--36 {
+  animation-name: animcheck;
+  animation-duration: 3600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--37 {
+  animation-name: animcheck;
+  animation-duration: 3700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--38 {
+  animation-name: animcheck;
+  animation-duration: 3800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--39 {
+  animation-name: animcheck;
+  animation-duration: 3900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--40 {
+  animation-name: animcheck;
+  animation-duration: 4000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--41 {
+  animation-name: animcheck;
+  animation-duration: 4100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--42 {
+  animation-name: animcheck;
+  animation-duration: 4200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--43 {
+  animation-name: animcheck;
+  animation-duration: 4300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--44 {
+  animation-name: animcheck;
+  animation-duration: 4400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--45 {
+  animation-name: animcheck;
+  animation-duration: 4500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--46 {
+  animation-name: animcheck;
+  animation-duration: 4600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--47 {
+  animation-name: animcheck;
+  animation-duration: 4700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--48 {
+  animation-name: animcheck;
+  animation-duration: 4800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--49 {
+  animation-name: animcheck;
+  animation-duration: 4900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--50 {
+  animation-name: animcheck;
+  animation-duration: 5000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--51 {
+  animation-name: animcheck;
+  animation-duration: 5100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--52 {
+  animation-name: animcheck;
+  animation-duration: 5200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--53 {
+  animation-name: animcheck;
+  animation-duration: 5300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--54 {
+  animation-name: animcheck;
+  animation-duration: 5400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--55 {
+  animation-name: animcheck;
+  animation-duration: 5500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--56 {
+  animation-name: animcheck;
+  animation-duration: 5600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--57 {
+  animation-name: animcheck;
+  animation-duration: 5700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--58 {
+  animation-name: animcheck;
+  animation-duration: 5800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--59 {
+  animation-name: animcheck;
+  animation-duration: 5900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--60 {
+  animation-name: animcheck;
+  animation-duration: 6000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--61 {
+  animation-name: animcheck;
+  animation-duration: 6100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--62 {
+  animation-name: animcheck;
+  animation-duration: 6200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--63 {
+  animation-name: animcheck;
+  animation-duration: 6300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--64 {
+  animation-name: animcheck;
+  animation-duration: 6400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--65 {
+  animation-name: animcheck;
+  animation-duration: 6500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--66 {
+  animation-name: animcheck;
+  animation-duration: 6600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--67 {
+  animation-name: animcheck;
+  animation-duration: 6700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--68 {
+  animation-name: animcheck;
+  animation-duration: 6800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--69 {
+  animation-name: animcheck;
+  animation-duration: 6900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--70 {
+  animation-name: animcheck;
+  animation-duration: 7000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--71 {
+  animation-name: animcheck;
+  animation-duration: 7100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--72 {
+  animation-name: animcheck;
+  animation-duration: 7200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--73 {
+  animation-name: animcheck;
+  animation-duration: 7300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--74 {
+  animation-name: animcheck;
+  animation-duration: 7400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--75 {
+  animation-name: animcheck;
+  animation-duration: 7500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--76 {
+  animation-name: animcheck;
+  animation-duration: 7600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--77 {
+  animation-name: animcheck;
+  animation-duration: 7700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--78 {
+  animation-name: animcheck;
+  animation-duration: 7800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--79 {
+  animation-name: animcheck;
+  animation-duration: 7900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--80 {
+  animation-name: animcheck;
+  animation-duration: 8000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--81 {
+  animation-name: animcheck;
+  animation-duration: 8100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--82 {
+  animation-name: animcheck;
+  animation-duration: 8200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--83 {
+  animation-name: animcheck;
+  animation-duration: 8300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--84 {
+  animation-name: animcheck;
+  animation-duration: 8400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--85 {
+  animation-name: animcheck;
+  animation-duration: 8500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--86 {
+  animation-name: animcheck;
+  animation-duration: 8600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--87 {
+  animation-name: animcheck;
+  animation-duration: 8700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--88 {
+  animation-name: animcheck;
+  animation-duration: 8800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--89 {
+  animation-name: animcheck;
+  animation-duration: 8900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--90 {
+  animation-name: animcheck;
+  animation-duration: 9000ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--91 {
+  animation-name: animcheck;
+  animation-duration: 9100ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--92 {
+  animation-name: animcheck;
+  animation-duration: 9200ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--93 {
+  animation-name: animcheck;
+  animation-duration: 9300ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--94 {
+  animation-name: animcheck;
+  animation-duration: 9400ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--95 {
+  animation-name: animcheck;
+  animation-duration: 9500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--96 {
+  animation-name: animcheck;
+  animation-duration: 9600ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--97 {
+  animation-name: animcheck;
+  animation-duration: 9700ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--98 {
+  animation-name: animcheck;
+  animation-duration: 9800ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+.animcheck--99 {
+  animation-name: animcheck;
+  animation-duration: 9900ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
 }
 
 .restaurant {
