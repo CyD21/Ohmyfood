@@ -352,7 +352,6 @@ footer {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .blockfoot {
-    width: 100%;
     margin-left: 20px;
   }
 }
