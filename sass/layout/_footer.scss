@@ -4,9 +4,24 @@ footer {
 .blockfoot {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   height: 250px;
   margin: 0px auto;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    overflow: hidden;
+    margin: 0px auto;
+    @include portrait {
+      width: 100%;
+      padding: 20px 0px 0px 60px;
+    }
+    @include mobiles {
+      width: 100%;
+      padding-left: 20px;
+    }
+  }
   &__title {
     margin-top: 20px;
   }

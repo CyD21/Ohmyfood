@@ -7,11 +7,7 @@ $bg-footer: #353535;
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiaire-color: #99e2d0;
-$btn-grad: linear-gradient(
-  162deg,
-  $secondary-color 0%,
-  $primary-color 90%
-);
+$btn-grad: linear-gradient(162deg, $secondary-color 0%, $primary-color 90%);
 $radius-top: 20px 20px 0px 0px;
 $radius-bot: 0px 0px 20px 20px;
 $radius-all: 20px;
@@ -20,4 +16,3 @@ $radius-left: 20px 0px 0px 20px;
 /*==== Variables Box shadow ========*/
 $shadow-on: 2px 2px 10px #666;
 $shadow-off: 1px 1px 10px #999;
-

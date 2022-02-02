@@ -8,6 +8,7 @@
   border: none;
   box-shadow: $shadow-off;
   &:hover {
+    background: $secondary-color;
     box-shadow: $shadow-on;
     cursor: pointer;
   }
@@ -59,9 +60,6 @@
   }
   &:hover {
     box-shadow: $shadow-on;
-    background-color: #f5edff;
-  }
-  &--actif {
     background-color: #f5edff;
   }
 }

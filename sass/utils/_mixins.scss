@@ -1,26 +1,25 @@
 /** Mixin de la partie page d'addueil **/
 @mixin gradient {
-    background: linear-gradient(rgb(241, 241, 241),rgb(211, 211, 211));
-    border-top: 2px solid #ccc;    
+  background: linear-gradient(rgb(241, 241, 241), rgb(211, 211, 211));
+  border-top: 2px solid #ccc;
 }
 /** Mixin de la partie menu restaurant **/
 @mixin menu {
-    background-color: #f2f2f2;
-    margin: 10px;
-    padding: 10px;
-    border-radius: $radius-all;    
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: $radius-all;
 }
 @mixin titremenu {
-    position: relative;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    hr {
-        position: absolute;
-        display: flex;
-        justify-content: flex-start;
-        border: 1px solid $tertiaire-color;
-        width: 40px;
-    }
-
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  hr {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid $tertiaire-color;
+    width: 40px;
+  }
 }

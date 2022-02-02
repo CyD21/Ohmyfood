@@ -1,4 +1,7 @@
 /** Styles de la grid**/
+.menu {
+  background-color: #fff;
+}
 .grid {
   display: grid;
   position: relative;
@@ -11,14 +14,14 @@
   gap: 0px;
   height: 100%;
   @include portrait {
-    margin: -100px 0px 0px 0px;
+    margin: -100px auto 0px auto;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr;
-    width: 100%;
-    border-radius: $radius-top;
+    width: 90%;
+    border-radius: $radius-all;
   }
   @include mobiles {
-    margin-top: -200px;
+    margin-top: -110px;
     border-radius: $radius-top;
     width: 100%;
     grid-template-rows: auto auto auto auto;
@@ -42,7 +45,6 @@
       margin: 0px;
     }
     @include portrait {
-
       grid-row-start: 1;
       grid-column-start: 1;
       grid-row-end: 1;
@@ -136,17 +138,16 @@
 .menuimg {
   display: flex;
   justify-content: center;
-  z-index: 10;
+  background-color: #fff;
   width: 100%;
-  height: 400px;
+  height: 340px;
   margin: 0px auto;
   border-top: 2px solid $bg-gray;
   & img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position:  50% 75%;
-    border-radius: $radius-bot;
+    object-position: 50% 75%;
     @include portrait {
       object-position: 50% 100%;
       width: 100%;
@@ -155,7 +156,6 @@
       height: 250px;
       object-position: 50% 90%;
       width: 100%;
-      
     }
   }
 }
@@ -167,12 +167,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   padding: 20px;
   font-size: x-large;
   @include portrait {
-    background-color: #ccc;
     margin: 0px;
   }
   @include mobiles {

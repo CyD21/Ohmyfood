@@ -2,17 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: #fff;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0px auto 0px auto;
+  padding-bottom: 20px;
   @include mobiles {
-    margin: 10px 0px 50px 0px;
+    width: 100%;
+    margin: 0px auto;
   }
   @include portrait {
-    margin: 0px;
+    margin: 0px auto;
   }
   &__title {
     padding-left: 20px;
-    width: 80%;
     @include mobiles {
       display: flex;
       width: 100%;
@@ -27,7 +30,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin: 0px;
     @include portrait {
       display: flex;
