@@ -14,7 +14,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0px;
+  width: 100%;
+  margin: 0px auto;
 }
 
 main {
@@ -75,17 +76,17 @@ h4 {
   }
 }
 .animexit {
-  animation: exit 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s both;
+  animation: exit 1s ease-out 4s both;
 }
 
 @keyframes exit {
   0% {
-    transform: translateZ(0);
+    transform: translateY(0px);
     opacity: 1;
   }
   100% {
-    transform: translateZ(-1100px);
     opacity: 0;
+    transform: translateY(-1100px);
   }
 }
 /******************************************************************************/
@@ -110,7 +111,7 @@ h4 {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -130,13 +131,14 @@ h4 {
 .loader__img {
   z-index: 1;
   position: absolute;
+  width: 320px;
 }
 .loader__anim {
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 90%);
   display: block;
-  width: 100%;
+  width: 320px;
+  margin: 0px auto;
   height: 90px;
-  position: absolute;
 }
 
 header {

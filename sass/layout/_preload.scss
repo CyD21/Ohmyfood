@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -23,12 +23,13 @@
     &__img {
         z-index: 1;
         position: absolute;
+        width: 320px;
     }
     &__anim {
         background: $btn-grad;
         display: block;
-        width: 100%;
+        width: 320px;
+        margin: 0px auto;
         height: 90px;
-        position: absolute;
     }
 }
