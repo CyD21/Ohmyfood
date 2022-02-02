@@ -36,3 +36,17 @@ header {
     }
   }
 }
+.backarrow {
+  position: absolute;
+  width: 100%;
+  padding-left: 10px;
+  & a {
+    color: black;
+  }
+  &__ico {
+    font-size: 40px;
+    @include mobiles {
+      font-size: 20px;
+    }
+  }
+}

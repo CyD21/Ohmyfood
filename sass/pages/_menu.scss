@@ -1,20 +1,28 @@
 /** Styles de la grid**/
 .menu {
   background-color: #fff;
+  width: 90%;
+  margin: 0px auto;
+  @include portrait {
+    width: 90%;
+  }
+  @include mobiles {
+    width: 100%;
+  }
 }
 .grid {
   display: grid;
   position: relative;
   background-color: #ccc;
-  border-radius: $radius-bot;
-  width: 80%;
-  margin: 0px auto 0px auto;
+  border-radius: $radius-all;
+  width: 100%;
+  margin: -50px auto 0px auto;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0px;
   height: 100%;
   @include portrait {
-    margin: -100px auto 0px auto;
+    margin: -50px auto 0px auto;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr;
     width: 90%;
@@ -149,12 +157,12 @@
     object-fit: cover;
     object-position: 50% 75%;
     @include portrait {
-      object-position: 50% 100%;
+      object-position: 50% 80%;
       width: 100%;
     }
     @include mobiles {
       height: 250px;
-      object-position: 50% 90%;
+      object-position: 50% 75%;
       width: 100%;
     }
   }
@@ -182,23 +190,6 @@
     width: 300px;
     margin: 0px auto;
     @include resabtn;
-  }
-}
-.backarrow {
-  position: absolute;
-  width: 80%;
-  & a {
-    color: black;
-  }
-  @include mobiles {
-    margin-left: 20px;
-    width: 100%;
-  }
-  &__ico {
-    font-size: 40px;
-    @include mobiles {
-      font-size: 20px;
-    }
   }
 }
 .animcheck {
