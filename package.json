@@ -9,5 +9,8 @@
   },
   "author": "Cyrille Dutoit",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "browserlist": "last 4 versions",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
