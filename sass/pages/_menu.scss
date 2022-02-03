@@ -152,7 +152,7 @@
     object-fit: cover;
     object-position: 50% 90%;
     @include portrait {
-      object-position: 50% 80%;
+      object-position: 50% bottom;
       width: 100%;
     }
     @include mobiles {

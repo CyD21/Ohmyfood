@@ -121,12 +121,12 @@ p {
 
 @keyframes exit {
   0% {
-    transform: translatez(0px);
+    transform: translatez(0);
     opacity: 1;
   }
   50% {
     opacity: 0;
-    transform: translatez(-1000px);
+    transform: translatez(1);
   }
   100% {
     z-index: -100;
@@ -689,7 +689,7 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .menuimg img {
-    object-position: 50% 80%;
+    object-position: 50% bottom;
     width: 100%;
   }
 }
