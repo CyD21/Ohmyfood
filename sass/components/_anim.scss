@@ -25,12 +25,12 @@
 }
 @keyframes exit {
   0% {
-    transform: translatez(0);
+    transform: translatez(0px);
     opacity: 1;
   }
   50% {
     opacity: 0;
-    transform: translatez(1);
+    transform: translatez(-1000px);
   }
   100% {
     z-index: -100;
