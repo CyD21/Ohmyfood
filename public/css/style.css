@@ -121,7 +121,7 @@ p {
 
 @keyframes exit {
   0% {
-    transform: translatez(0px);
+    transform: translatez(0);
     opacity: 1;
   }
   50% {
