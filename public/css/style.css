@@ -25,29 +25,67 @@ main {
 
 h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-family: "shrikhand", cursive;
+  margin: 0px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    font-size: 18px;
+  }
 }
 
 h4 {
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h4 {
+    font-size: 14px;
+  }
+}
+
+h5 {
   font-size: 16px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h5 {
+    font-size: 14px;
+  }
+}
+
+h6 {
+  font-size: 10px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h6 {
+    font-size: 8px;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  p {
+    font-size: 10px;
+  }
 }
 
 /** Bouton du block réservation page d'accueil **/
@@ -483,17 +521,12 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-family: "Shrikhand", cursive;
   width: 100%;
-  font-size: 36px;
   padding: 20px 0px 20px 20px;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 2;
   grid-column-end: 4;
-}
-.grid__title h1 {
-  margin: 0px;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .grid__title {
