@@ -32,13 +32,11 @@
     width: 100%;
     margin: 0px auto;
     @include portrait {
-      width: 100%;
       flex-wrap: wrap;
     }
     @include mobiles {
       flex-direction: column;
       align-items: center;
-      width: 100%;
     }
   }
 }
