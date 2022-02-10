@@ -1,6 +1,7 @@
 /** Bouton du block réservation page d'accueil **/
 @mixin resabtn {
   background: $btn-grad;
+  font-size: 16px;
   text-align: center;
   color: #fff;
   padding: 15px 20px;
@@ -49,7 +50,7 @@
   }
   i {
     padding: 0px 10px;
-    color: $primary-color;
+    color: #999999;
     @include mobiles {
       padding: 0px 15px;
     }
@@ -60,5 +61,8 @@
   &:hover {
     box-shadow: $shadow-on;
     background-color: #f5edff;
+    & i {
+      color: $primary-color;
+    }
   }
 }
